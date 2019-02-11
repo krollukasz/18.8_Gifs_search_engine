@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css?family=Acme');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: lightslategray;
+  font-family: "Acme", sans-serif;
+}
+
+.app {
+  text-align: center;
+}
+
+.app h1 {
+  font-size: 38px;
+}
+
+.app p {
+  font-size: 22px;
+}
+
+.app a {
+  color: red;
+  text-decoration: none;
+}
