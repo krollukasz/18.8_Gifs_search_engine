@@ -1,0 +1,23 @@
+{
+  "name": "18.8_gifs_search_engine",
+  "version": "1.0.0",
+  "description": "Gifs search engine",
+  "main": "index.js",
+  "scripts": {
+    "start": "http-server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/krollukasz/18.8_Gifs_search_engine.git"
+  },
+  "author": "Łukasz Król",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/krollukasz/18.8_Gifs_search_engine/issues"
+  },
+  "homepage": "https://github.com/krollukasz/18.8_Gifs_search_engine#readme",
+  "devDependencies": {
+    "http-server": "^0.11.1"
+  }
+}
