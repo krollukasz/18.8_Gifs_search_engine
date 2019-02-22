@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/krollukasz/18.8_Gifs_search_engine#readme",
   "devDependencies": {
+    "babel-polyfill": "^6.26.0",
     "http-server": "^0.11.1"
   }
 }
