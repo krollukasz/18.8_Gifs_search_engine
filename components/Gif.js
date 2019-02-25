@@ -4,24 +4,6 @@ var styles = {
   margin: "0.5em"
 };
 
-function getServer() {
-  return new Promise(
-    function(resolve, reject) {
-      fetch(GIPHY_LOADING_URL, {cache: "no-store"})
-      .then(function(resp) {
-        resolve(resp.json());
-      })
-      .catch(function() {
-        reject("error")
-      })
-    }
-  )
-};
-
-getServer()
-  .then(gif => this.setState({gif: gif}))
-  .catch(error => console.log(error));
-
 Gif = React.createClass({
   getUrl: function() {
     return this.props.sourceUrl || GIPHY_LOADING_URL;
