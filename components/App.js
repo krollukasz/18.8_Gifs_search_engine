@@ -13,11 +13,11 @@ App = React.createClass({
     });
 
     this.getGif(searchingText) 
-      .then (response => this.setState(
-        loading = false,
-        gif = gif,
-        searchingText = searchingText
-      ))
+      .then (gif => this.setState({
+        loading: false,
+        gif: gif,
+        searchingText: searchingText
+      }))
       .catch(error => console.error("Check whats happened", error));
   },
 
@@ -28,7 +28,6 @@ App = React.createClass({
         var GIPHY_PUB_KEY = "Xc3QtJ7TBTfqyckL1y856Sfh12FwhY0i";
         var url = GIPHY_API_URL + "/v1/gifs/random?api_key=" + GIPHY_PUB_KEY + "&tag=" + searchingText;
         var xhr = new XMLHttpRequest();
-        xhr.open("GET", url);
         xhr.onload = function() {
           if (this.status === 200) {
             var data = JSON.parse(xhr.responseText).data;
@@ -47,7 +46,6 @@ App = React.createClass({
           ));
         };
         xhr.open("GET", url);
-        // request.send();
         xhr.send();
       }
     );
